@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.keydev_reports',
     'apps.registration',
+    'apps.keydev_reports',
 ]
 
 MIDDLEWARE = [
@@ -132,5 +132,6 @@ JAZZMIN_SETTINGS = {
     "site_brand": "MSCompany",
     "welcome_sign": "Добро пожаловать в MSCompany",
     "copyright": "© 2024 MSCompany",
+    "theme": "darkly",
 }
 
