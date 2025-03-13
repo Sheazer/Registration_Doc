@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 
-from .utils import generate_documents
+# from .utils import generate_documents
 
 
 class Intern(models.Model):
@@ -42,9 +42,9 @@ class Intern(models.Model):
         verbose_name = 'Стажер'
         verbose_name_plural = 'Стажеры'
 
-    def save(self, *args, **kwargs):
-        try:
-            generate_documents(self)
-        except Exception as e:
-            raise ValidationError(f"Ошибка при генерации документов: {str(e)}")
-        super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     try:
+    #         generate_documents(self)
+    #     except Exception as e:
+    #         raise ValidationError(f"Ошибка при генерации документов: {str(e)}")
+    #     super().save(*args, **kwargs)
